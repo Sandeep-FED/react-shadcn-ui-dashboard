@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "react-chakra-ui-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/reactChakraUi/ReactChakraUiWebPart.js",
+          "manifest": "./src/webparts/reactChakraUi/ReactChakraUiWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ReactChakraUiWebPartStrings": "lib/webparts/reactChakraUi/loc/{locale}.js"
+  }
+}

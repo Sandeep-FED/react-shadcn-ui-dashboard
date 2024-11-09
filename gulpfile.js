@@ -16,7 +16,7 @@ build.rig.getTasks = function () {
   return result
 }
 
-// TailwindCSS
+// add task to build tailwind css
 const postcss = require("gulp-postcss")
 const atimport = require("postcss-import")
 const tailwind = require("tailwindcss")
@@ -32,57 +32,5 @@ const tailwindcss = build.subTask(
   }
 )
 build.rig.addPreBuildTask(tailwindcss)
-
-// wnd TailwindCSS
-
-build.configureWebpack.mergeConfig({
-  additionalConfiguration: (generatedConfiguration) => {
-    if (!generatedConfiguration.resolve.alias) {
-      generatedConfiguration.resolve.alias = {}
-    }
-
-    // webparts folder
-    generatedConfiguration.resolve.alias["@webparts"] = path.resolve(
-      __dirname,
-      "lib/webparts"
-    )
-
-    // components folder
-    generatedConfiguration.resolve.alias["@utilties"] = path.resolve(
-      __dirname,
-      "lib/utilties"
-    )
-
-    //root src folder
-    generatedConfiguration.resolve.alias["src"] = path.resolve(__dirname, "lib")
-
-    return generatedConfiguration
-  },
-})
-
-// build.configureWebpack.mergeConfig({
-//   additionalConfiguration: (generatedConfiguration) => {
-//     generatedConfiguration.module.rules.push(
-//       {
-//         test: /\.mjs$/,
-//         include: /node_modules/,
-//         type: "javascript/auto",
-//       },
-//       {
-//         // Match `.js`, `.jsx`, `.ts` or `.tsx` files
-//         test: /\.[jt]sx?$/,
-//         loader: "esbuild-loader",
-//         options: {
-//           // JavaScript version to compile to
-//           target: "es2015",
-//         },
-//       }
-//     )
-
-//     generatedConfiguration.resolve.extensions = ["*", ".mjs", ".js", ".json"]
-
-//     return generatedConfiguration
-//   },
-// })
 
 build.initialize(require("gulp"))

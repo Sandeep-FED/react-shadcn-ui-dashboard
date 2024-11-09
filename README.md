@@ -1,4 +1,4 @@
-# react-chakra-ui
+# react-shadcn-ui
 
 ## Summary
 

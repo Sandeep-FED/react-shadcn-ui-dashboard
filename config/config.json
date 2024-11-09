@@ -2,17 +2,17 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
   "version": "2.0",
   "bundles": {
-    "react-chakra-ui-web-part": {
+    "react-shadcn-ui-web-part": {
       "components": [
         {
-          "entrypoint": "./lib/webparts/reactChakraUi/ReactChakraUiWebPart.js",
-          "manifest": "./src/webparts/reactChakraUi/ReactChakraUiWebPart.manifest.json"
+          "entrypoint": "./lib/webparts/reactShadCN/reactShadCNWebPart.js",
+          "manifest": "./src/webparts/reactShadCN/reactShadCNWebPart.manifest.json"
         }
       ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "ReactChakraUiWebPartStrings": "lib/webparts/reactChakraUi/loc/{locale}.js"
+    "reactShadCNWebPartStrings": "lib/webparts/reactShadCN/loc/{locale}.js"
   }
 }

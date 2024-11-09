@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "react-chakra-ui-client-side-solution",
+    "name": "react-shadcn-ui-client-side-solution",
     "id": "c12856f1-6713-43f2-9cbc-1a0c4186d57c",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
@@ -16,10 +16,10 @@
     },
     "metadata": {
       "shortDescription": {
-        "default": "react-chakra-ui description"
+        "default": "react-shadcn-ui description"
       },
       "longDescription": {
-        "default": "react-chakra-ui description"
+        "default": "react-shadcn-ui description"
       },
       "screenshotPaths": [],
       "videoUrl": "",
@@ -27,14 +27,14 @@
     },
     "features": [
       {
-        "title": "react-chakra-ui Feature",
-        "description": "The feature that activates elements of the react-chakra-ui solution.",
+        "title": "react-shadcn-ui Feature",
+        "description": "The feature that activates elements of the react-shadcn-ui solution.",
         "id": "ae831b77-e0f4-44f6-8ab6-8a87f4dcf68c",
         "version": "1.0.0.0"
       }
     ]
   },
   "paths": {
-    "zippedPackage": "solution/react-chakra-ui.sppkg"
+    "zippedPackage": "solution/react-shadcn-ui.sppkg"
   }
 }

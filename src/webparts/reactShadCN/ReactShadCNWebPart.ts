@@ -8,16 +8,16 @@ import {
 import { BaseClientSideWebPart } from "@microsoft/sp-webpart-base"
 import { IReadonlyTheme } from "@microsoft/sp-component-base"
 
-import * as strings from "ReactChakraUiWebPartStrings"
+import * as strings from "reactShadCNWebPartStrings"
 import { IAppProps } from "./components/IAppProps"
 import App from "./components/App"
 import "../../../assets/dist/tailwind.css"
 
-export interface IReactChakraUiWebPartProps {
+export interface IreactShadCNWebPartProps {
   description: string
 }
 
-export default class ReactChakraUiWebPart extends BaseClientSideWebPart<IReactChakraUiWebPartProps> {
+export default class reactShadCNWebPart extends BaseClientSideWebPart<IreactShadCNWebPartProps> {
   private _isDarkTheme: boolean = false
   private _environmentMessage: string = ""
 

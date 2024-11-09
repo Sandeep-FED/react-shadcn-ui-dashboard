@@ -1,14 +1,27 @@
-# react-shadcn-ui
+# React ShadCN Dashboard
 
 ## Summary
 
-Short summary on functionality and used technologies.
+This SharePoint Framework (SPFx) web part serves as a foundational solution for developers aiming to use ShadCN components within SPFx projects. By integrating ShadCN components with Tailwind CSS in an SPFx web part, this project enables developers to craft modern, responsive, and visually appealing SharePoint webparts. This solution provides a seamless, intuitive developer experience for building advanced UI elements in SharePoint.
 
-[picture of the solution in action, if possible]
+![Dashboard Screenshot](./assets//Screenshot%202024-11-09%20at%2020.21.27.png)
+
+## Compatibility
+
+| :warning: Important                                                                                                                                                                                                                   |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Every SPFx version is optimally compatible with specific versions of Node.js. To build this sample, ensure that the version of Node on your workstation matches one of the versions listed in this section.                 |
+| Refer to <https://aka.ms/spfx-matrix> for more information on SPFx compatibility.                                                                                                                                                     |
 
 ## Used SharePoint Framework Version
 
 ![version](https://img.shields.io/badge/version-1.19.0-green.svg)
+
+This sample is optimized for the following environment configuration:
+
+![SPFx 1.19.0](https://img.shields.io/badge/SPFx-1.19.0-green.svg)
+![Node.js v18 | v16](https://img.shields.io/badge/Node.js-v18%20%7C%20v16-green.svg)
+![Compatible with SharePoint Online](https://img.shields.io/badge/SharePoint%20Online-Compatible-green.svg)
 
 ## Applies to
 
@@ -17,57 +30,60 @@ Short summary on functionality and used technologies.
 
 > Get your own free development tenant by subscribing to [Microsoft 365 developer program](http://aka.ms/o365devprogram)
 
-## Prerequisites
-
-> Any special pre-requisites?
-
 ## Solution
 
-| Solution    | Author(s)                                               |
-| ----------- | ------------------------------------------------------- |
-| folder name | Author details (name, company, twitter alias with link) |
+| Solution            | Author(s)                                                                                                                                                                                                                                                 |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| react-shadcn-dashboard | Sandeep P S ( [LinkedIn](https://www.linkedin.com/in/sandeepps1299/) ) / Quadrasystems.net ( [Twitter](https://www.linkedin.com/company/quadrasystems.net-india-pvt-ltd) / [LinkedIn](https://www.linkedin.com/company/quadrasystems.net-india-pvt-ltd) ) |
+
+## Contributors🧑‍💻
+
+- [Sandeep P S](https://github.com/Sandeep-FED)
 
 ## Version history
 
-| Version | Date             | Comments        |
-| ------- | ---------------- | --------------- |
-| 1.1     | March 10, 2021   | Update comment  |
-| 1.0     | January 29, 2021 | Initial release |
+| Version | Date             | Comments                                |
+| ------- | ---------------- | --------------------------------------- |
+| 1.0     | November 9, 2024 | Initial release with ShadCN and Tailwind CSS integration |
 
-## Disclaimer
+## Features💡
 
-**THIS CODE IS PROVIDED _AS IS_ WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
+Key features demonstrated by this solution:
 
----
+- Enables ShadCN component integration within SPFx projects
+- Utilizes Tailwind CSS for efficient, responsive styling
+- Empowers developers to create modern, modular, and user-friendly webparts in SharePoint
 
-## Minimal Path to Awesome
+## Minimal Path to Awesome⚡
 
 - Clone this repository
-- Ensure that you are at the solution folder
-- in the command-line run:
-  - **npm install**
-  - **gulp serve**
+- Ensure that you are in the solution folder
+- Run these commands:
+  - `npm install`
+  - `gulp serve`
 
-> Include any additional steps as needed.
+## Deploy Package Solution 🚀
 
-## Features
-
-Description of the extension that expands upon high-level summary above.
-
-This extension illustrates the following concepts:
-
-- topic 1
-- topic 2
-- topic 3
-
-> Notice that better pictures and documentation will increase the sample usage and the value you are providing for others. Thanks for your submissions advance.
-
-> Share your web part with others through Microsoft 365 Patterns and Practices program to get visibility and exposure. More details on the community, open-source projects and other activities from http://aka.ms/m365pnp.
+- Ensure that you are in the solution folder
+- Run these commands:
+  - `gulp build --ship`
+  - `gulp bundle --ship`
+  - `gulp package-solution --ship`
+- Upload the package to the AppCatalog and add it to your SharePoint site.
 
 ## References
 
-- [Getting started with SharePoint Framework](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-developer-tenant)
-- [Building for Microsoft teams](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/build-for-teams-overview)
-- [Use Microsoft Graph in your solution](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/using-microsoft-graph-apis)
-- [Publish SharePoint Framework applications to the Marketplace](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/publish-to-marketplace-overview)
-- [Microsoft 365 Patterns and Practices](https://aka.ms/m365pnp) - Guidance, tooling, samples and open-source controls for your Microsoft 365 development
+- [ShadCN Library](https://shadcn.dev) - Powerful UI components for modern web apps.
+- [Tailwind CSS](https://tailwindcss.com) - Utility-first CSS framework for rapid UI development.
+- [Microsoft 365 Patterns and Practices](https://aka.ms/m365pnp)
+- [SharePoint Framework](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-developer-tenant)
+
+## Help
+
+The community is always willing to help improve these samples. If you're having issues building the solution, run [spfx doctor](https://pnp.github.io/cli-microsoft365/cmd/spfx/spfx-doctor/) from within the solution folder to check compatibility.
+
+If you encounter issues, [create a new issue](https://github.com/pnp/sp-dev-fx-webparts/issues/new). For questions or improvement ideas, the same link will guide you to the community space for assistance.
+
+## Disclaimer
+
+**THIS CODE IS PROVIDED _AS IS_ WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED.**
